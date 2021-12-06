@@ -35,10 +35,10 @@ else
 endif
 
 #### Tools ####
-ifeq ($(shell type mips-linux-gnu-ld >/dev/null 2>/dev/null; echo $$?), 0)
-  MIPS_BINUTILS_PREFIX := mips-linux-gnu-
+ifeq ($(shell type mipsel-linux-gnu-ld >/dev/null 2>/dev/null; echo $$?), 0)
+  MIPS_BINUTILS_PREFIX := mipsel-linux-gnu-
 else
-  $(error Please install or build mips-linux-gnu)
+  $(error Please install or build mipsel-linux-gnu)
 endif
 
 CC       := tools/ido_recomp/$(DETECTED_OS)/7.1/cc

@@ -90,6 +90,14 @@ sudo apt-get update
 sudo apt-get install git build-essential binutils-mips-linux-gnu python3 libpng-dev
 ```
 
+Under **Arch Linux**, you package names may differ, you can use an AUR package manager ([paru]() is recommended) and the following commands:
+
+```bash
+paru -Syu
+paru -S git base-devel cross-mipsel-linux-gnu-binutils python3 libpng
+```
+
+
 #### 2. Clone the repository
 
 Clone `https://github.com/zeldaret/oot.git` where you wish to have the project, with a command such as:
